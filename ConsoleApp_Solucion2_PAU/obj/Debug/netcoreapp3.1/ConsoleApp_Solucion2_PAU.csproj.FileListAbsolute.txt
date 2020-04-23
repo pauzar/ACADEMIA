@@ -1,0 +1,13 @@
+C:\VS\ConsoleApp_Solucion2_PAU\bin\Debug\netcoreapp3.1\ConsoleApp_Solucion2_PAU.exe
+C:\VS\ConsoleApp_Solucion2_PAU\bin\Debug\netcoreapp3.1\ConsoleApp_Solucion2_PAU.deps.json
+C:\VS\ConsoleApp_Solucion2_PAU\bin\Debug\netcoreapp3.1\ConsoleApp_Solucion2_PAU.runtimeconfig.json
+C:\VS\ConsoleApp_Solucion2_PAU\bin\Debug\netcoreapp3.1\ConsoleApp_Solucion2_PAU.runtimeconfig.dev.json
+C:\VS\ConsoleApp_Solucion2_PAU\bin\Debug\netcoreapp3.1\ConsoleApp_Solucion2_PAU.dll
+C:\VS\ConsoleApp_Solucion2_PAU\bin\Debug\netcoreapp3.1\ConsoleApp_Solucion2_PAU.pdb
+C:\VS\ConsoleApp_Solucion2_PAU\obj\Debug\netcoreapp3.1\ConsoleApp_Solucion2_PAU.csprojAssemblyReference.cache
+C:\VS\ConsoleApp_Solucion2_PAU\obj\Debug\netcoreapp3.1\ConsoleApp_Solucion2_PAU.csproj.CoreCompileInputs.cache
+C:\VS\ConsoleApp_Solucion2_PAU\obj\Debug\netcoreapp3.1\ConsoleApp_Solucion2_PAU.AssemblyInfoInputs.cache
+C:\VS\ConsoleApp_Solucion2_PAU\obj\Debug\netcoreapp3.1\ConsoleApp_Solucion2_PAU.AssemblyInfo.cs
+C:\VS\ConsoleApp_Solucion2_PAU\obj\Debug\netcoreapp3.1\ConsoleApp_Solucion2_PAU.dll
+C:\VS\ConsoleApp_Solucion2_PAU\obj\Debug\netcoreapp3.1\ConsoleApp_Solucion2_PAU.pdb
+C:\VS\ConsoleApp_Solucion2_PAU\obj\Debug\netcoreapp3.1\ConsoleApp_Solucion2_PAU.genruntimeconfig.cache
