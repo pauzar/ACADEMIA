@@ -406,34 +406,43 @@ namespace Console_App1
             var dni = Console.ReadLine();
             Console.WriteLine("Inserte la asignatura");
             var sub = Console.ReadLine();
-            Console.WriteLine("Inserte el ID del examen");
-            var idExam = int.Parse(Console.ReadLine());
-            Console.WriteLine("Inserte la nota");
-            var mark = Double.Parse(Console.ReadLine());
-            
+
             var student = Students[dni];
             var subject = Subjects[sub];
             var keepdoing = true;
-            while(keepdoing)
+
+            if (dni == student.Dni)
+            //var student = Students.Values.FirstOrDefault(x => x.Dni == dni);
             {
-                if (dni == student.Dni)
-                    //var student = Students.Values.FirstOrDefault(x => x.Dni == dni);
+                if (sub == subject.Name)
                 {
-                    if (sub == subject.Name)
+                    while (keepdoing)
                     {
-                        var exam = new Exam()
+                        Console.WriteLine("Si no desa introducir notas escriba anular ");
+                        var anular = Console.ReadLine();
+                        //var student = Students.Values.FirstOrDefault(x => x.Dni == dni);
+                        if (anular != "anular")
                         {
-                            Id = Guid.NewGuid(),
-                            idExam = idExam,
-                            Mark = mark,
-                            Student = student,
-                            Subject = subject,
-                        };
-                        Exams.Add(exam.idExam, exam);
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Es posible que no hayas introducido correctamente la asignatura");
+                            Console.WriteLine("Inserte el ID del examen");
+                            var idExam = int.Parse(Console.ReadLine());
+                            Console.WriteLine("Inserte la nota");
+                            var mark = Double.Parse(Console.ReadLine());
+                            var exam = new Exam()
+                            {
+                                Id = Guid.NewGuid(),
+                                idExam = idExam,
+                                Mark = mark,
+                                Student = student,
+                                Subject = subject,
+                            };
+                            Exams.Add(exam.idExam, exam);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Salimos del bucle e introducimos otro estudiante");
+                            keepdoing = false;
+                        }
+
                     }
                 }
                 else
@@ -441,8 +450,11 @@ namespace Console_App1
                     Console.WriteLine($"Es posible que no hayas introducido correctamente la asignatura");
                 }
             }
-          
-            ShowStudentsMenuOptions();
+            else
+            {
+                Console.WriteLine($"Es posible que no hayas introducido correctamente la asignatura");
+            }          
+            ShowExamsMenuOptions();
         }
         public static void ShowAllExams()
         {
